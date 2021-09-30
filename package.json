@@ -1,0 +1,20 @@
+{
+  "name": "basenode",
+  "version": "1.0.0",
+  "description": "Template of site with JWT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "basenode"
+  },
+  "author": "amavr",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "log4js": "^6.3.0"
+  }
+}
