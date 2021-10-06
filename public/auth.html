@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/ico">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+    <title>Log browser</title>
+</head>
+
+<body>
+    <div id="app">
+        <div class="page">
+            <div class="card" style="width: 18rem;">
+                <img src="img/gates.png" class="card-img" alt="">
+                <div class="card-img-overlay">
+                    <div class="mb-3">
+                        <input type="email" class="form-control trs" id="impEmail" placeholder="Email"
+                            value="amavr@ya.ru">
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" class="form-control trs" id="inpPassword" placeholder="Password">
+                    </div>
+                    <div class="mb-3 d-md-flex justify-content-md-end">
+                        <button type="button" class="btn btn-warning">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="debug">
+            <div class="page">
+                Hello!!
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                waiting: false,
+                modal: [],
+                error: null,
+                page_id: '',
+                nodes: [],
+                selected: null,
+                action: null
+            },
+            methods: {
+                getToken: function(){
+                    var auth = JSON.parse(localStorage['auth'] || 'null');
+                },
+                auth: async function(){
+
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
